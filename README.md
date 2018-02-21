@@ -50,7 +50,7 @@ CREATE TABLE Orders (OrderID int NOT NULL AUTO_INCREMENT,
 1. config.py - contains connection to mySQL parameters
 2. connect_mysql.py - contains a function that connects to mySQL server using parameters from config.py
 3. orders_model.py - contains helper functions for CRUD operations meant for the table Orders
-4. persons_model.py - contains helper functions for CRUD operations meant for the table Persons
+4. person_model.py - contains helper functions for CRUD operations meant for the table Persons
 5. main.py - main code that uses abovementioned helper functions to carry out simple tasks like managing a person's food orders using PersonID.
 
 ## Details: 
