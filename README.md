@@ -24,8 +24,8 @@ The aim of this project is to perform the following mySQL operations: <br>
 
 ## Template tables
 - Create a database named DB <br>
-- To create the database DB, type in mySQL server:
-```` create database DB; `````
+- To create the database DB, type in mySQL server: <br>
+```` create database DB; ````
 - To use database, type in mySQL server: <br>
 ```` use DB;  ````
 - To create a table named Orders, type in my SQL server: <br>
@@ -48,14 +48,14 @@ CREATE TABLE Orders (OrderID int NOT NULL AUTO_INCREMENT,
 
 ## Files available: 
 1. config.py - contains connection to mySQL parameters
-2. connect_mysql.py - connect to mySQL server using parameters from config.py
+2. connect_mysql.py - contains a function that connects to mySQL server using parameters from config.py
 3. orders_model.py - contains helper functions for CRUD operations meant for the table Orders
 4. persons_model.py - contains helper functions for CRUD operations meant for the table Persons
 5. main.py - main code that uses abovementioned helper functions to carry out simple tasks like managing a person's food orders using PersonID.
 
 ## Details: 
 - In order to commence this project, a connection to mySQL server has to be established. In order to accomplish this, the parameters in the config.py file are used within the function from connect_mysql.py. 
-- The orders.py file contains basic functions that can be called to retrieve/add/update/delete a row from the table Orders. An additional functions to display the entire table has been included as well. The information regarding formats for function inputs can be found within the comment section of each function.
+- The orders.py file contains basic functions that can be called to retrieve/add/update/delete a row from the table Orders. An additional function to display the entire table has been included as well. The information regarding formats for function inputs can be found within the comment section of each function.
 - Like the orders. py file, the person.py file has similar basic functions that can be applied to the table Persons. Additional functions that show the entire table and find the maximum value for a specified column can also be found. The information regarding formats for function inputs can be found within the comment section of each function.
 - The main function runs a small program where the records within both tables can be managed by the user.
   - The program begins by asking the user to input a PersonID: 
