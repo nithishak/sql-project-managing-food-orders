@@ -22,13 +22,12 @@ while True:
     print "Thank you. The person's id is " + str(personID)
     isPersonInDataBase = True
   else:
-    order.getRowById(personID) #
-    user_input = input('What would you like to do? Please choose \n 1.to add an order \n 2 to delete an order\n 3 to update an order \n 4 to exit\n')
+    order.getRowById(personID) #shows the order numbers for the existant personID
+    user_input = input('What would you like to do? Please choose \n 1.to add an order \n 2. to delete an order\n 3, to update an order \n 4. to exit\n')
     
     if user_input == 1:
-      orderNumber = input('Please enter order number: ')
       new_row_inputs = {}
-      new_row_inputs['orderNumber'] = orderNumber
+      new_row_inputs['orderNumber'] = input('Please enter order number: ')
       new_row_inputs['person_ID'] = personID
       order.insertRow(new_row_inputs)
     elif user_input == 2:
@@ -36,7 +35,7 @@ while True:
       order.deleteRow(orderId)
     elif user_input == 3:
       orderId = input('Please enter order ID to update: ')
-      orderNumber = input('Please enter order number: ')
+      orderNumber = input('Please enter an updated order number: ')
       order.updateRow(orderId, {'OrderNumber':orderNumber})
     elif user_input == 4:
       sys.exit()
